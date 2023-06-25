@@ -14,14 +14,17 @@ const MainNavigation = () => {
 
     return <header className={classes.header}>
     
-        <a href="/" className={classes.headerLogo} onClick={navigateHandler}>Amazon</a>
+        <a href="/" className={classes.headerLogo} onClick={navigateHandler}>Store</a>
         <nav>
             <ul className={classes.list}>
                 <li> <NavLink className={({isActive}) => (isActive ? classes.active : undefined)} end={true} to='/'>Home</NavLink> </li>
                 <li> <NavLink className={({isActive}) => (isActive ? classes.active : undefined)} to='/products'>Products</NavLink> </li>
-                <li><CartButton /></li>
+                
             </ul>
         </nav>
+        <ul>
+            <li><CartButton /></li>
+        </ul>
     </header>
 }
 

@@ -1,0 +1,21 @@
+.sectionWrapper{
+    background-image: url(/src/Images/Home-Banner.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.shopButton{
+    position: absolute;
+    bottom: 115px;
+    left: 95px;
+    border: 1px solid #9679E7;
+    color: #9679E7;
+    width: 150px;
+}
+.shopButton:hover{
+    background-color: #9679E7;
+    border: 1px solid #9679E7;
+    color: white;
+}

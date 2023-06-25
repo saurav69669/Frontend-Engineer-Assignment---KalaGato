@@ -1,12 +1,31 @@
 .products h2 {
-    color: white;
-    margin: 2rem auto;
-    text-align: center;
-    text-transform: uppercase;
+  color: black;
+  margin: 2rem auto;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
   }
   
   .products ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+
+  .products{
+    padding: 8px 10%;
+  }
+
+  @media(max-width: 1024px){
+    .products ul {
+      grid-template-columns: auto auto;
+    }
+  }
+
+  @media(max-width: 768px){
+    .products ul {
+      grid-template-columns: auto;
+    }
   }

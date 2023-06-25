@@ -1,18 +1,18 @@
 .button {
-    background-color: transparent;
-    border-color: #1ad1b9;
-    color: #1ad1b9;
-    padding: 0.5rem 1.5rem;
-    border: 1px solid #1ad1b9;
-    border-radius: 3px;
-    cursor: pointer;
+  background-color: transparent;
+  border-color: #9679E7;
+  color: #9679E7;
+  padding: 0.5rem 1.5rem;
+  border: 0;
+  border-radius: 3px;
+  cursor: pointer;
   }
   
   .button:hover,
   .button:active {
     color: white;
-    background-color: #1ac5d1;
-    border: 1px solid #1ac5d1;
+    background-color: transparent;
+    border: 0;
   }
   
   .button span {
@@ -20,8 +20,14 @@
   }
   
   .badge {
-    background-color: #1ad1b9;
-    border-radius: 30px;
-    padding: 0.15rem 1.25rem;
-    color: #1d1d1d;
+    background-color: #DBA492;
+    border-radius: 500%;
+    padding: 0px 8px;
+    color: white;
+    display: inline-block;
+  }
+
+  .button:hover .badge {
+    background-color: #9679E7;
+    color: white;
   }

@@ -34,7 +34,7 @@ const ProductItem = (props) => {
         <header>
         <img src={thumbnail} alt="Girl in a jacket" width="200" height="200"></img>
           <h3>{title}</h3>
-          <div className={classes.price}>${price.toFixed(2)}</div>
+          <div className={classes.price}><sup>$</sup>{price.toFixed(2)}</div>
         </header>
         <p>{description}</p>
         <div className={classes.actions}>

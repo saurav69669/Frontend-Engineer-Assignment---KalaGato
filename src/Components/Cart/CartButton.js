@@ -15,7 +15,7 @@ const CartButton = () => {
 
     return (
     <button className={classes.button} onClick={navigateHandler}>
-        <span>My Cart</span>
+        <img alt='cart' src='../src/Images/shopping-cart.png'></img>
         <span className={classes.badge}>{totalQuantity}</span>
     </button>
     )
