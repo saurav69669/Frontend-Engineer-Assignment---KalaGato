@@ -16,7 +16,6 @@ export const fetchUserData = () => {
 
         try {
             const userData = await fetchData();
-            console.log(userData);
             const totalProduct = userData.limit;
 
             const transformedProducts = userData.products.map((productData) => {
@@ -35,20 +34,13 @@ export const fetchUserData = () => {
                         totalProducts: totalProduct
                       }
                     })
-            console.log(transformedProducts);
 
             dispatch(productAction.addProductData({
                 items: transformedProducts,
             }))
 
-            // dispatch(cartAction.replaceCart({
-            //     items : cartData.items || [],
-            //     totalQuantity: cartData.totalQuantity
-            // }));
-
         } catch (error) {
-           
-              console.error(`error boi: ${error}`)
+              console.error(`error Occured: ${error}`)
         }
            
     }

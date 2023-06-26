@@ -15,7 +15,6 @@ const HomePage = () => {
 
     return (
         <>
-        {/* <h1>Home Page!🏠</h1> */}
         <section className={classes.sectionWrapper}>
             <img alt='Home-banner' src={banner}></img>
             <button className={classes.shopButton} onClick={navigateHandler}>Shop Now</button>

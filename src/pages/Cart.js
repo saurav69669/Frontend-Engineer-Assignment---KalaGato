@@ -4,9 +4,7 @@ import classes from './Cart.module.css';
 import Card from '../Components/UI/Card';
 
 const Cart = () => {
-
     const cartItems = useSelector(state => state.product.cartItems)
-    console.log(cartItems);
 
    return (
     <>

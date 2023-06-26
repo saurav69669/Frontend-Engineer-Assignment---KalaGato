@@ -6,6 +6,7 @@ import Footer from "../Components/Footer/Footer";
 
 const ProductPage = () => {
     const dispatch = useDispatch();
+    
     useEffect(() => {
         dispatch(fetchUserData())
     },[dispatch])

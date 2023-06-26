@@ -6,15 +6,8 @@ import { productAction } from '../../store/product-slice';
 const ProductItem = (props) => {
   const dispatch = useDispatch();
   const { title, price, description, id, thumbnail,brand, category, discountPercentage } = props;
-//    console.log(props);
 
   const addToCartHandler = () => {
-    // dispatch(cartAction.addItemToCart({
-    //   id,
-    //   title,
-    //   price
-    // }))
-    
     dispatch(productAction.addCartItems({
         id,
         title,
@@ -24,8 +17,6 @@ const ProductItem = (props) => {
         brand,
         category
     }))
-
-    console.log('Item added to Cart!');
 }
 
   return (

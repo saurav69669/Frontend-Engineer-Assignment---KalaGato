@@ -4,7 +4,6 @@ import CartButton from "./Cart/CartButton";
 import { useNavigate } from "react-router-dom";
 
 const MainNavigation = () => {
-
     const navigate = useNavigate();
 
     const navigateHandler = (event) => {

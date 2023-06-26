@@ -29,13 +29,6 @@
     color: white;
 }
 
-/* .totalPriceSection {
-    width: 50%;
-    margin: auto;
-    background-color: white;
-    border-radius: 6px;
-} */
-
 @media(max-width: 768px){
     .cartWrapper ul{
         width: 75%;

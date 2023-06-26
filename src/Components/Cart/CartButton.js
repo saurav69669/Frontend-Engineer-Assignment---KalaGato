@@ -5,12 +5,9 @@ import cart from "../../Images/shopping-cart.png";
 
 const CartButton = () => {
     const navigate = useNavigate();
-
     const totalQuantity = useSelector(state => state.product.cartQuantity)
-     console.log(totalQuantity);
 
     const navigateHandler = () => {
-        console.log('Cart btn clicked!');
         navigate('/cart');
     }
 

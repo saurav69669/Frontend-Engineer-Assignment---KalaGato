@@ -10,8 +10,6 @@
   }
   
   .item header {
-    /* display: flex;
-    justify-content: space-between; */
     align-items: baseline;
   }
   .item header img{
