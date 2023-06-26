@@ -1,7 +1,7 @@
 .item h3 {
-  margin: 15px auto;
-  font-size: 1.25rem;
-  color: black;
+  margin: 15px auto 0;
+  font-size: 16px;
+  color: #000000a8;
   width: 215px;
   white-space: nowrap;
   overflow: hidden;
@@ -28,6 +28,18 @@
     font-weight: bold;
   }
   
+  .price span{
+    display: inline-block;
+    position: relative;
+    top: -4px;
+    font-size: 10px;
+  }
+
+  .discountText {
+    color: #3a3a3a78;
+    position: relative !important;
+    top:0px !important;
+  }
   .item p {
     color: #3a3a3a;
     max-width: 300px;
@@ -37,6 +49,7 @@
     text-overflow: ellipsis;
     display: -webkit-box;
     margin: 8px auto 15px;
+    font-size: 13px;
   }
   
   .actions {
@@ -55,9 +68,14 @@
     width: 100%;
   }
   
-  button:hover,
-  button:active {
+  button:hover {
     background-color: #9679E7;
     border-color: #9679E7;
+    color: white;
+  }
+
+  button:active {
+    background-color: #DBA492;
+    border-color: #DBA492;
     color: white;
   }

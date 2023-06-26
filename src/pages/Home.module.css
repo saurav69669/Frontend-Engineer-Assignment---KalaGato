@@ -1,21 +1,101 @@
 .sectionWrapper{
-    background-image: url(/src/Images/Home-Banner.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 500px;
     position: relative;
+}
+
+.sectionWrapper img{
+    width: 100%;
 }
 
 .shopButton{
     position: absolute;
-    bottom: 115px;
-    left: 95px;
     border: 1px solid #9679E7;
     color: #9679E7;
     width: 150px;
+    top: 63%;
+    left: 13%;
+    transform: translate(-50%, -19%);
 }
 .shopButton:hover{
     background-color: #9679E7;
     border: 1px solid #9679E7;
     color: white;
 }
+
+/* card css */
+
+.cardSection h2{
+    color: #000000a8;
+    margin: 2rem auto;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.homeCard{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 30px;
+}
+.newCard {
+    border-radius: 6px;
+    background-color: white;
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 25px;
+    box-shadow: 2px 2px 7px -2px #80808075;
+    transition: 0.5s;
+  }
+
+  .newCard:hover{
+    transform: scale(1.03);
+  }
+
+  .newCard h4{
+    color: #414143;
+  }
+.newCard img{
+    width: 100%;
+}
+
+@media(max-width: 1024px){
+    .homeCard{
+        grid-template-columns: auto auto;
+    }
+}
+
+@media(max-width: 768px){
+    .homeCard{
+        grid-template-columns: auto;
+        margin-top: 0;
+    }
+    .shopButton{
+        left: 17%;
+        padding: 6px;
+    }
+}
+@media(max-width: 600px){
+    .shopButton{
+        width: 125px;
+    }
+}
+  @media(max-width: 576px){
+    .newCard {
+      width: 90%;
+    }
+    .shopButton{
+        left: 13%;
+        padding: 0px;
+        font-size: 10px;
+        width: 72px;
+    }
+    .cardSection h2{
+        margin: 1rem auto;
+        font-size: 15px;
+    }
+  }
+
+  @media(max-width: 475px){
+    .shopButton{
+        left: 17%;
+    }
+  }

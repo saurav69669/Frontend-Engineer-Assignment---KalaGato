@@ -40,6 +40,7 @@ const cartItem = useSelector(state => state.product.cartItems)
           thumbnail={product.thumbnail}
           category={product.category}
           brand={product.brand}
+          discountPercentage = {product.discountPercentage}
         />
         ) )}
         

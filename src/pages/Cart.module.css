@@ -1,0 +1,52 @@
+.cartWrapper h2{
+    margin: 0;
+    padding: 15px;
+    color: #000000a8;
+}
+
+.cartHeading {
+    color: #9679E7 !important;
+}
+
+.cartWrapper ul{
+    width: 50%;
+    margin: auto;
+}
+
+.cartWrapper ul li{
+    background: white;
+    color: #000000a8;
+    border-radius: 6px;
+}
+
+.footerSection {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 16px 0px;
+    background: #DBA492;
+    color: white;
+}
+
+/* .totalPriceSection {
+    width: 50%;
+    margin: auto;
+    background-color: white;
+    border-radius: 6px;
+} */
+
+@media(max-width: 768px){
+    .cartWrapper ul{
+        width: 75%;
+    }    
+}
+
+@media(max-width: 600px){
+    .cartWrapper ul{
+        width: 92%;
+    }    
+    .cartWrapper h2{
+        font-size: 20px;
+    }
+}

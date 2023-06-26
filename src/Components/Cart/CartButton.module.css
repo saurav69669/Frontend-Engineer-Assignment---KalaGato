@@ -8,6 +8,10 @@
   cursor: pointer;
   }
   
+  .button img{
+    width: 22px;
+    vertical-align: bottom;
+  }
   .button:hover,
   .button:active {
     color: white;
@@ -30,4 +34,11 @@
   .button:hover .badge {
     background-color: #9679E7;
     color: white;
+  }
+
+
+  @media(max-width: 600px){
+    .button {
+      padding: 0.5rem 0.1rem;
+    }
   }

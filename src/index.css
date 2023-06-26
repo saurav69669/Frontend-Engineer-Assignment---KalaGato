@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap');
+
 * {
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
 }
 
 :root {
@@ -47,6 +51,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
 }
 
 code {
@@ -65,5 +70,5 @@ main {
   margin: auto;
   text-align: center;
   /* padding: 8px 10%; */
-  background: #9679e712;
+  /* background: #9679e712; */
 }

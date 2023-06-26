@@ -17,7 +17,7 @@ const MainNavigation = () => {
         <a href="/" className={classes.headerLogo} onClick={navigateHandler}>Store</a>
         <nav>
             <ul className={classes.list}>
-                <li> <NavLink className={({isActive}) => (isActive ? classes.active : undefined)} end={true} to='/'>Home</NavLink> </li>
+                <li className={classes.displayNone}> <NavLink className={({isActive}) => (isActive ? classes.active : undefined)} end={true} to='/'>Home</NavLink> </li>
                 <li> <NavLink className={({isActive}) => (isActive ? classes.active : undefined)} to='/products'>Products</NavLink> </li>
                 
             </ul>

@@ -6,7 +6,7 @@
   
   .item h3 {
     margin: 0 0 0.5rem 0;
-    font-size: 1.75rem;
+    font-size: 16px;
   }
   
   .item header {
@@ -22,18 +22,18 @@
   }
   
   .quantity span {
-    font-size: 1.5rem;
+    font-size: 16px;
     font-weight: bold;
   }
   
   .price {
-    font-size: 1.5rem;
+    font-size: 16px;
     font-weight: bold;
   }
   
   .itemprice {
     font-weight: normal;
-    font-size: 1rem;
+    font-size: 11px;
     font-style: italic;
   }
   
@@ -44,7 +44,7 @@
   }
   
   .actions button {
-    background-color: transparent;
+    background-color: #DBA492;
     border: 1px solid white;
     margin-left: 0.5rem;
     padding: 0.15rem 1rem;
@@ -55,4 +55,21 @@
   .actions button:active {
     background-color: #4b4b4b;
     color: white;
+  }
+
+  @media(max-width: 600px){
+    .item h3 {
+      font-size: 1rem;
+      text-align: initial;
+      width: 120px;
+    }
+    .price {
+      font-size: 1rem;
+    }
+    .itemprice {
+      font-size: 0.8rem;
+    }
+    .quantity span {
+      font-size: 1rem;
+    }
   }

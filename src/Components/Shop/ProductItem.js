@@ -5,7 +5,7 @@ import { productAction } from '../../store/product-slice';
 
 const ProductItem = (props) => {
   const dispatch = useDispatch();
-  const { title, price, description, id, thumbnail,brand, category } = props;
+  const { title, price, description, id, thumbnail,brand, category, discountPercentage } = props;
 //    console.log(props);
 
   const addToCartHandler = () => {
@@ -34,7 +34,7 @@ const ProductItem = (props) => {
         <header>
         <img src={thumbnail} alt="Girl in a jacket" width="200" height="200"></img>
           <h3>{title}</h3>
-          <div className={classes.price}><sup>$</sup>{price.toFixed(2)}</div>
+          <div className={classes.price}><span>$</span>{price}   <span className={classes.discountText}>({discountPercentage}% off)</span></div> 
         </header>
         <p>{description}</p>
         <div className={classes.actions}>

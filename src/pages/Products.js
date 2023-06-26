@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import Products from "../Components/Shop/Products";
 import { useDispatch } from "react-redux";
 import { fetchUserData } from "../store/product-Action";
+import Footer from "../Components/Footer/Footer";
 
 const ProductPage = () => {
     const dispatch = useDispatch();
@@ -9,7 +10,12 @@ const ProductPage = () => {
         dispatch(fetchUserData())
     },[dispatch])
 
-    return <Products />
+    return (
+        <>
+        <Products />
+        <Footer />
+        </>
+    ) 
 }
 
 export default ProductPage;
