@@ -64,6 +64,7 @@
     color: #9679E7;
     border: 1px solid #9679E7;
     width: 100%;
+    transition: 0.5s;
   }
   
   button:hover {
